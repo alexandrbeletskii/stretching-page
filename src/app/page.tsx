@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import { InstagramGrid } from "@/components/InstagramGrid";
 import { TestimonialsSlider } from "@/components/TestimonialsSlider";
