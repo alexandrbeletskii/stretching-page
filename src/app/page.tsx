@@ -16,6 +16,7 @@ export default function Home() {
             <li><a href="#faq" className="hover:text-ink">FAQ</a></li>
             <li><a href="#contact" className="hover:text-ink">Contact</a></li>
           </ul>
+          
         </nav>
       </header>
 
@@ -33,7 +34,7 @@ export default function Home() {
             </div>
           </div>
           <div className="relative aspect-[3/4] w-full overflow-hidden rounded-xl bg-clay/20">
-            <Image src="/hero.jpg" alt="Nadiia — stretching" fill className="object-cover" />
+            <Image src="hero.jpg" alt="Nadiia — stretching" fill className="object-cover" />
           </div>
         </section>
 
@@ -41,7 +42,7 @@ export default function Home() {
           <h2 className="font-serif text-3xl text-ink mb-6">About</h2>
           <div className="grid md:grid-cols-3 gap-8 items-start">
             <div className="md:col-span-1 relative aspect-[3/4] w-full overflow-hidden rounded-xl bg-clay/20">
-              <Image src="/about.jpg" alt="Nadiia — about portrait" fill className="object-cover" />
+              <Image src="about.jpg" alt="Nadiia — about portrait" fill className="object-cover" />
             </div>
             <div className="md:col-span-2 max-w-prose text-ink/85">
               <blockquote className="font-serif text-xl leading-relaxed text-ink">
@@ -87,10 +88,10 @@ export default function Home() {
             <InstagramGrid
               className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4"
               items={[
-                { href: "https://www.instagram.com/reel/DMniZvZN_Pv/", src: "/ig-1.jpg", alt: "Reel — stretch", videoSrc: "/reel_1.mp4" },
-                { href: "https://www.instagram.com/reel/DNtIc2v0PBb/", src: "/ig-2.jpg", alt: "Reel — review", videoSrc: "/reel_2.mp4" },
-                { href: "https://www.instagram.com/reel/DNlbmcRpTPF/", src: "/ig-3.jpg", alt: "Reel — routine", videoSrc: "/reel_3.mp4" },
-                { href: "https://www.instagram.com/reel/DMSt7p3NkyH/", src: "/ig-4.jpg", alt: "Reel — practice", videoSrc: "/reel_4.mp4" },
+                { href: "https://www.instagram.com/reel/DMniZvZN_Pv/", src: "ig-1.jpg", alt: "Reel — stretch", videoSrc: "reel_1.mp4" },
+                { href: "https://www.instagram.com/reel/DNtIc2v0PBb/", src: "ig-2.jpg", alt: "Reel — review", videoSrc: "reel_2.mp4" },
+                { href: "https://www.instagram.com/reel/DNlbmcRpTPF/", src: "ig-3.jpg", alt: "Reel — routine", videoSrc: "reel_3.mp4" },
+                { href: "https://www.instagram.com/reel/DMSt7p3NkyH/", src: "ig-4.jpg", alt: "Reel — practice", videoSrc: "reel_4.mp4" },
               ]}
             />
             <p className="mt-2 text-xs text-ink/60">Place thumbnails in public: ig-1.jpg, ig-2.jpg, ig-3.jpg.</p>
@@ -102,7 +103,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="rounded-xl border border-ink/15 bg-bone p-6 shadow-sm">
               <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg mb-4 bg-clay/20">
-                <Image src="/in_person.png" alt="In-person 1:1 — preview" fill className="object-cover" />
+                <Image src="in_person.png" alt="In-person 1:1 — preview" fill className="object-cover" />
               </div>
               <div className="flex items-center justify-between">
                 <h3 className="font-serif text-xl text-ink">In‑person 1:1</h3>
@@ -129,7 +130,7 @@ export default function Home() {
 
             <div className="rounded-xl border border-ink/15 bg-bone p-6 shadow-sm">
               <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg mb-4 bg-clay/20">
-                <Image src="/online.png" alt="Online 1:1 — preview" fill className="object-cover" />
+                <Image src="online.png" alt="Online 1:1 — preview" fill className="object-cover" />
               </div>
               <div className="flex items-center justify-between">
                 <h3 className="font-serif text-xl text-ink">Online 1:1</h3>
