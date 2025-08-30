@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "export": "next export -o out"
   },
   "dependencies": {
     "embla-carousel-autoplay": "8.6.0",
