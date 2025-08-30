@@ -17,12 +17,12 @@ export function InstagramEmbed({ urls }: InstagramEmbedProps) {
             s.src = "https://www.instagram.com/embed.js";
             document.body.appendChild(s);
             s.onload = () => {
-                // @ts-ignore
+                // @ts-expect-error: Instagram global injected by embed script
                 if (window.instgrm?.Embeds) window.instgrm.Embeds.process();
             };
         } else {
-            // @ts-ignore
-            if ((window as any).instgrm?.Embeds) (window as any).instgrm.Embeds.process();
+            // @ts-expect-error: Instagram global injected by embed script
+            if (window.instgrm?.Embeds) window.instgrm.Embeds.process();
         }
     }, [urls]);
 
