@@ -1,5 +1,6 @@
 
 import Image from "next/image";
+import { HeroSlider } from "@/components/HeroSlider";
 import { InstagramGrid } from "@/components/InstagramGrid";
 import { TestimonialsSlider } from "@/components/TestimonialsSlider";
 
@@ -16,7 +17,7 @@ export default function Home() {
             <li><a href="#faq" className="hover:text-ink">FAQ</a></li>
             <li><a href="#contact" className="hover:text-ink">Contact</a></li>
           </ul>
-          
+
         </nav>
       </header>
 
@@ -33,9 +34,13 @@ export default function Home() {
               <a href="#pricing" className="inline-flex items-center rounded-full bg-olive px-6 py-3 text-white transition-opacity hover:opacity-90">Start training</a>
             </div>
           </div>
-          <div className="relative aspect-[3/4] w-full overflow-hidden rounded-xl bg-clay/20">
-            <Image src="hero.jpg" alt="Nadiia — stretching" fill className="object-cover" />
-          </div>
+          <HeroSlider
+            slides={[
+              { src: "hero.jpg", alt: "Nadiia — stretching" },
+              { src: "hero-2.jpg", alt: "Stretching — back work" },
+              { src: "hero-3.jpg", alt: "Yoga — balance and breath" },
+            ]}
+          />
         </section>
 
         <section id="about" className="mx-auto max-w-6xl px-6 py-10">
